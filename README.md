@@ -1,4 +1,6 @@
-![image info](https://www.techspecs.io/big-logo-light.svg)
+![TechSpecs Logo](https://www.techspecs.io/big-logo-light.svg)
+![TechSpecs Library For Python](https://i.imgur.com/OLdpBZA.jpg)
+
 
 # TechSpecs Python
 
