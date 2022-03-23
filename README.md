@@ -17,7 +17,7 @@ This python library provides access to the standardized technical specifications
 
 ## Requirements
 
--   Python 3.6+ (PyPy supported)
+-   Python 3.6+
 
 
 ## Installation
