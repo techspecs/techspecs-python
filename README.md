@@ -1,4 +1,4 @@
-![TechSpecs Logo](https://i.imgur.com/3sfBN8c.jpg)
+![TechSpecs Logo](https://i.imgur.com/GBpyUGu.jpg)
 
 
 
