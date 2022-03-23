@@ -1,16 +1,21 @@
 ![image info](https://www.techspecs.io/big-logo-light.svg)
 
-# TechSpecs Python Library
+# TechSpecs Python
 
-TechSpecs provides access to standardized technical specifications of the world's consumer electronics, including smartphones, tablets, smartwatches, laptops, and more. This library makes it easy to search and quickly get the specs of any device you are interested in.
+This python library provides access to the standardized technical specifications of the world's consumer electronics, including smartphones, tablets, smartwatches, laptops, and more. 
 
 ## Documentation
 
-See the [TechSpecs API docs](https://techspecs.readme.io).
+-   See the [TechSpecs API docs](https://techspecs.readme.io)
 
-### API Key
+## API Key
 
-Get a TechSpecs [API Key](https://developer.dashboard.techspecs.io/)
+-   Get a TechSpecs [API Key](https://developer.dashboard.techspecs.io/)
+
+
+## Requirements
+
+-   Python 3.6+ (PyPy supported)
 
 
 ## Installation
@@ -19,15 +24,11 @@ Get a TechSpecs [API Key](https://developer.dashboard.techspecs.io/)
 pip install techspecs
 ```
 
-### Requirements
-
--   Python 2.7+ or Python 3.4+ (PyPy supported)
-
 ## Usage
 
 The library needs to be configured with your account's api key which is
-available in your [TechSpecs Dashboard][api-keys]. Set `stripe.api_key` to its
-value:
+available in your [TechSpecs Dashboard](https://developer.dashboard.techspecs.io/). Set `techspecs_key` to its
+value.
 
 ### Product Search
 
@@ -44,7 +45,7 @@ query = {
     'keyword': 'iphone 13',
     'category': 'smartphone',
 }
-search = techspecs.search(base, query, key, mode='pretty')
+search = techspecs.search(base, query, key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
 print(search)
 
 ```
@@ -59,7 +60,7 @@ techspecs_key = ""
 techspecs_base = ""
 techspecs_id = ""
 
-details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty')
+details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
 print(details)
 
 ```
@@ -71,19 +72,19 @@ import techspecs
 
 techspecs_key = ""
 techspecs_base = ""
-brands = techspecs.brands(techspecs_base, techspecs_key, mode='pretty')
+brands = techspecs.brands(techspecs_base, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
 print(brands)
 
 
 ```
-### list all categories
+### List all categories
 ```python
 import techspecs
 # All Categories
 
 techspecs_key = ""
 techspecs_base = ""
-categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty')
+categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
 print(categories)
 
 ```
@@ -101,7 +102,7 @@ date = {
     "from": "2010-01-01",
     "to": "2022-03-15"
 }
-all_products = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty')
+all_products = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
 print(all_products)
 ```
 
