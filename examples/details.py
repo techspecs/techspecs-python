@@ -1,9 +1,17 @@
 import techspecs
 # Product Details
 
-techspecs_key = ""
-techspecs_base = ""
-techspecs_id = ""
+# TechSpecs API Key
+techspecs_key = "techspecs_api_key"
 
-details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty')
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+techspecs_base = "a8TD3mkN49fhg2y"
+
+# TechSpecs product id 
+techspecs_id = "6186b047987cda5f88311983"           
+
+# choose between "pretty" or "raw" mode for viewing response
+details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
+
+# print the search results
 print(details)
