@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Techspecs.egg-info/PKG-INFO
+src/Techspecs.egg-info/SOURCES.txt
+src/Techspecs.egg-info/dependency_links.txt
+src/Techspecs.egg-info/top_level.txt
+src/techspecs/__init__.py
+src/techspecs/techspecs.py
+src/techspecs.egg-info/PKG-INFO
+src/techspecs.egg-info/SOURCES.txt
+src/techspecs.egg-info/dependency_links.txt
+src/techspecs.egg-info/top_level.txt
