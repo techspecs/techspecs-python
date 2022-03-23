@@ -38,16 +38,21 @@ value.
 import techspecs
 import json
 
+# TechSpecs API Key
+key = "techspecs_api_key"   
 
-key = "techspecs_api_key"   # TechSpecs API Key
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+base = 'a8TD3mkN49fhg2y'     
 
-# Search Product
-base = 'techspecs_base'     # TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
 query = {
-    'keyword': 'iphone 13', # Product name or version number to search
-    'category': 'all',      # Product category to search
+    'keyword': 'iPhone 13', # product name or version number to search 
+    'category': 'all',      # product category to search
 }
-search = techspecs.search(base, query, key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
+
+# choose between "pretty" or "raw" mode for viewing response
+search = techspecs.search(base, query, key, mode='pretty') 
+
+# print the search results
 print(search)
 
 ```
@@ -58,11 +63,19 @@ print(search)
 import techspecs
 # Product Details
 
-techspecs_key = ""          # TechSpecs API Key
-techspecs_base = ""         # TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
-techspecs_id = ""           # TechSpecs product id 
+# TechSpecs API Key
+techspecs_key = "techspecs_api_key"
 
-details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+techspecs_base = "a8TD3mkN49fhg2y"
+
+# TechSpecs product id 
+techspecs_id = "6186b047987cda5f88311983"           
+
+# choose between "pretty" or "raw" mode for viewing response
+details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
+
+# print the search results
 print(details)
 
 ```
@@ -70,11 +83,17 @@ print(details)
 ### List all brands
 ```python
 import techspecs
-# returns a list of all brands
 
-techspecs_key = ""          # TechSpecs API Key
-techspecs_base = ""         # TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
-brands = techspecs.brands(techspecs_base, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
+# TechSpecs API Key
+techspecs_key = "techspecs_api_key"          
+
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+techspecs_base = "a8TD3mkN49fhg2y"         
+
+# choose between "pretty" or "raw" mode for viewing response
+brands = techspecs.brands(techspecs_base, techspecs_key, mode='pretty') 
+
+# print the search results
 print(brands)
 
 
@@ -82,29 +101,49 @@ print(brands)
 ### List all categories    
 ```python
 import techspecs
-# returns a list of all categories
 
-techspecs_key = ""          # TechSpecs API Key
-techspecs_base = ""         # TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
-categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
+# TechSpecs API Key
+techspecs_key = "techspecs_api_key" 
+
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+techspecs_base = "a8TD3mkN49fhg2y"    
+
+# choose between "pretty" or "raw" mode for viewing response
+categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') 
+
+# print the search results
 print(categories)
 
 ```
 ### List all products by brand, category and release date
 ```python
 import techspecs
-# returns a list of all products by brand, category and release date
 
-techspecs_key = ""      # TechSpecs API Key
-techspecs_base = ""     # TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
-page = 1                # Enter the page number to fetch results from
-brand = [""]            # Type in the name of the brand you're looking for or leave this field empty to see results from all brands
-category = [""]         # Type in the name of the category you're looking for or leave this field empty to see results from all categories
-date = {                # Please provide a date range to narrow your search. Leave this field empty to fetch all results from all dates.
-    "from": "2010-01-01",   # From release date: to fetch results from YYYY-MM-DD
-    "to": "2022-03-15"      # To release date: to fetch results from YYYY-MM-DD
+# TechSpecs API Key
+techspecs_key = "techspecs_api_key"     
+
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+techspecs_base = "a8TD3mkN49fhg2y"     
+
+# enter the page number to fetch results from
+page = 1    
+
+# type in the name of the brand you're looking for or leave this field empty to see results from all brands
+brand = ["Apple"]            
+
+# type in the name of the category you're looking for or leave this field empty to see results from all categories
+category = ["smartphone"] 
+
+# please provide a date range to narrow your search. Leave this field empty to fetch all results from all dates
+date = {                
+    "from": "2010-01-01",   # YYYY-MM-DD
+    "to": "2022-03-15"      # YYYY-MM-DD
 }
-all_products = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') # Choose between "pretty" or "raw" mode for viewing response.
+
+# choose between "pretty" or "raw" mode for viewing response
+all_products = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') 
+
+# print the search results
 print(all_products)
 ```
 
