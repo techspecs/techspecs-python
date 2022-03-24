@@ -1,3 +1,4 @@
+# List all products by brand, category and release date
 import techspecs
 
 # TechSpecs API Key
