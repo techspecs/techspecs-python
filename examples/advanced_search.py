@@ -22,7 +22,7 @@ date = {
 }
 
 # choose between "pretty" or "raw" mode for viewing response
-all_products = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') 
+response = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') 
 
 # print the search results
-print(all_products)
+print(response)
