@@ -31,7 +31,7 @@ pip install techspecs
 The library needs to be configured with your account's api key and base which is
 available in your [TechSpecs Dashboard](https://developer.dashboard.techspecs.io/). 
 
-Set `techspecs_key` to your key value and 'techspecs_base' to your base value.
+Set `techspecs_key` to your key value and `techspecs_base` to your base value.
 
 ### Product Search
 
