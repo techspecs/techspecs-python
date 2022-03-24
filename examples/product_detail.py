@@ -1,6 +1,5 @@
 # Get the standardized specifications of a specified product
 import techspecs
-# Product Details
 
 # TechSpecs API Key
 techspecs_key = "techspecs_api_key"
