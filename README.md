@@ -95,7 +95,26 @@ print(response)
 ```
 
 ### Apple Machine ID Search
-#### 
+#### Search for Apple products by machine id
+```python
+import techspecs
+Apple Product search by machine ID
+
+# TechSpecs API Key
+techspecs_key = "techspecs_api_key"
+
+# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
+techspecs_base = "a8TD3mkN49fhg2y"
+
+# machine id to search
+machine_id = "iphone8,3"
+
+# choose between "pretty" or "raw" mode for viewing response
+response = techspecs.apple_machine_id(techspecs_base, machine_id, techspecs_key, mode='pretty')
+
+# print the specifications of the product
+print(response)
+```
 
 ### Product Details
 
@@ -153,3 +172,5 @@ response = techspecs.categories(techspecs_base, techspecs_key, mode='pretty')
 
 # print the list of all categories
 print(response)
+
+
