@@ -7,7 +7,7 @@ techspecs_key = "techspecs_api_key"
 techspecs_base = "a8TD3mkN49fhg2y"    
 
 # choose between "pretty" or "raw" mode for viewing response
-categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') 
+response = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') 
 
-# print the search results
-print(categories)
+# print the list of all categories
+print(response)
