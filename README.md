@@ -37,6 +37,7 @@ Set `techspecs_key` to your key value and `techspecs_base` to your base value.
 #### Search for a device by specifying it's model name, version number or features 
 
 ```python
+# Search for a product by name, version or features
 import techspecs
 import json
 
@@ -52,16 +53,17 @@ query = {
 }
 
 # choose between "pretty" or "raw" mode for viewing response
-search = techspecs.search(base, query, key, mode='pretty') 
+response = techspecs.search(base, query, key, mode='pretty') 
 
 # print the search results
-print(search)
+print(response)
 
 ```
 
 ### Advanced Search
 #### List all products by brand, category and release date
 ```python
+# List all products by brand, category and release date
 import techspecs
 
 # TechSpecs API Key
@@ -86,10 +88,10 @@ date = {
 }
 
 # choose between "pretty" or "raw" mode for viewing response
-all_products = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') 
+response = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') 
 
 # print the search results
-print(all_products)
+print(response)
 ```
 
 ### Apple Machine ID Search
@@ -98,8 +100,8 @@ print(all_products)
 ### Product Details
 
 ```python
+# Get the standardized specifications of a specified product
 import techspecs
-# Product Details
 
 # TechSpecs API Key
 techspecs_key = "techspecs_api_key"
@@ -111,10 +113,10 @@ techspecs_base = "a8TD3mkN49fhg2y"
 techspecs_id = "6186b047987cda5f88311983"           
 
 # choose between "pretty" or "raw" mode for viewing response
-details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
+response = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
 
 # print the specifications of the product
-print(details)
+print(response)
 
 ```
 
@@ -129,10 +131,10 @@ techspecs_key = "techspecs_api_key"
 techspecs_base = "a8TD3mkN49fhg2y"         
 
 # choose between "pretty" or "raw" mode for viewing response
-brands = techspecs.brands(techspecs_base, techspecs_key, mode='pretty') 
+response = techspecs.brands(techspecs_base, techspecs_key, mode='pretty') 
 
 # print the list of all brands
-print(brands)
+print(response)
 
 
 ```
@@ -147,11 +149,7 @@ techspecs_key = "techspecs_api_key"
 techspecs_base = "a8TD3mkN49fhg2y"    
 
 # choose between "pretty" or "raw" mode for viewing response
-categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') 
+response = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') 
 
 # print the list of all categories
-print(categories)
-
-
-
-
+print(response)
