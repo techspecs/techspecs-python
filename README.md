@@ -33,7 +33,7 @@ available in your [TechSpecs Dashboard](https://developer.dashboard.techspecs.io
 
 Set `techspecs_key` to your key value and `techspecs_base` to your base value.
 
-### Product Search
+### TechSpecs Search
 
 ```python
 import techspecs
