@@ -1,3 +1,4 @@
+# Get the standardized specifications of a specified product
 import techspecs
 # Product Details
 
@@ -11,7 +12,7 @@ techspecs_base = "a8TD3mkN49fhg2y"
 techspecs_id = "6186b047987cda5f88311983"           
 
 # choose between "pretty" or "raw" mode for viewing response
-details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
+response = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
 
-# print the search results
-print(details)
+# print the specifications of the product
+print(response)
