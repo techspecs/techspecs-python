@@ -1,3 +1,4 @@
+# Search for a product by name, version or features
 import techspecs
 import json
 
