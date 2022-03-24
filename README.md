@@ -75,7 +75,7 @@ techspecs_id = "6186b047987cda5f88311983"
 # choose between "pretty" or "raw" mode for viewing response
 details = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
 
-# print the search results
+# print the specifications of the product
 print(details)
 
 ```
@@ -93,7 +93,7 @@ techspecs_base = "a8TD3mkN49fhg2y"
 # choose between "pretty" or "raw" mode for viewing response
 brands = techspecs.brands(techspecs_base, techspecs_key, mode='pretty') 
 
-# print the search results
+# print the list of all brands
 print(brands)
 
 
@@ -111,7 +111,7 @@ techspecs_base = "a8TD3mkN49fhg2y"
 # choose between "pretty" or "raw" mode for viewing response
 categories = techspecs.categories(techspecs_base, techspecs_key, mode='pretty') 
 
-# print the search results
+# print the list of all categories
 print(categories)
 
 ```
