@@ -97,8 +97,8 @@ print(response)
 ### Apple Machine ID Search
 #### Search for Apple products by machine id
 ```python
+# Search for an Apple product by machine id
 import techspecs
-Apple Product search by machine ID
 
 # TechSpecs API Key
 techspecs_key = "techspecs_api_key"
@@ -172,5 +172,7 @@ response = techspecs.categories(techspecs_base, techspecs_key, mode='pretty')
 
 # print the list of all categories
 print(response)
+
+
 
 
