@@ -176,3 +176,7 @@ print(response)
 
 
 
+```
+
+![TechSpecs Logo](https://i.imgur.com/8J8GmDe.jpg)
+
