@@ -173,10 +173,10 @@ response = techspecs.categories(techspecs_base, techspecs_key, mode='pretty')
 # print the list of all categories
 print(response)
 
-
-
-
 ```
+
+
+
 
 ![TechSpecs Logo](https://i.imgur.com/8J8GmDe.jpg)
 
