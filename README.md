@@ -1,6 +1,6 @@
-# TechSpecs Python
+# Introducing TechSpecs Python
 
-This python library provides access to the standardized technical specifications of the world's consumer electronics, including smartphones, tablets, smartwatches, laptops, and more. 
+This python library provides automatic access to the standardized technical specifications of the world's consumer electronics, including the latest smartphones, tablets, smartwatches, laptops, and more. 
 
 ![TechSpecs Logo](https://i.imgur.com/QYvbQpn.png)
 
