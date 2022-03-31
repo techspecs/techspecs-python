@@ -1,10 +1,8 @@
-![TechSpecs Logo](https://i.imgur.com/g46n9F3.jpg)
-
-
-
 # TechSpecs Python
 
 This python library provides access to the standardized technical specifications of the world's consumer electronics, including smartphones, tablets, smartwatches, laptops, and more. 
+
+![TechSpecs Logo](https://i.imgur.com/QYvbQpn.png)
 
 ## Documentation
 
@@ -176,7 +174,4 @@ print(response)
 ```
 
 
-
-
-![TechSpecs Logo](https://i.imgur.com/8J8GmDe.jpg)
 
