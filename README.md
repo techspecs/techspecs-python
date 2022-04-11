@@ -20,6 +20,7 @@ This python library provides automatic access to the standardized technical spec
 
 
 ## Installation
+![How to install TechSpecs](https://i.imgur.com/m9yxeWW.png)
 
 ```sh
 pip install techspecs
