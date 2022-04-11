@@ -11,7 +11,7 @@ This python library provides automatic access to the standardized technical spec
 
 ## API Key
 
--   Get a TechSpecs [API Key](https://developer.dashboard.techspecs.io/)
+-   Get an API key [here](https://developer.dashboard.techspecs.io/)
 
 
 ## Requirements
