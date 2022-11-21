@@ -5,11 +5,6 @@
 
 This python library provides automatic access to the standardized technical specifications of the world's consumer electronics, including the latest smartphones, tablets, smartwatches, laptops, and more. 
 
-
-## Documentation
-
--   See the [TechSpecs API Docs](https://techspecs.readme.io)
-
 ## API Key
 
 -   Get an API key [here](https://developer.dashboard.techspecs.io/)
