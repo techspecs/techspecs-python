@@ -10,10 +10,11 @@ This python library provides automatic access to the standardized technical spec
 At TechSpecs, we are committed to providing the most comprehensive and up-to-date database of technical specifications for consumer electronics products. Here are some statistics on our current database:
 
 Total number of products: 100,000+
-Brands: 400+
-Categories: 6 (Smartphones, Tablets, Smartwatches, Monitors, TVs, and Laptops)
-Technical specifications: Over 300 for each product, including dimensions, weight, display features, connectivity options, and more.
-Daily updates: We update our database on a daily basis to ensure that our API provides the most accurate and up-to-date technical specifications for the products you're interested in.
+-   Brands: 400+
+-   Categories: 6 (Smartphones, Tablets, Smartwatches, Monitors, TVs, and Laptops)
+-   Technical specifications: Over 300 for each product, including dimensions, weight, display features, connectivity options, and more.
+-   Daily updates: We update our database on a daily basis to ensure that our API provides the most accurate and up-to-date technical specifications for the products you're interested in.
+
 We take pride in providing a database that is comprehensive and reliable, and we are constantly working to expand and improve it. If you have any questions or issues, please don't hesitate to reach out to our support team for assistance.
 
 ## API Key
@@ -41,7 +42,6 @@ available in your [TechSpecs Dashboard](https://techspecs.io/dashboard).
 Set `techspecs_api_key` to your key value and `techspecs_base_url` to your base value.
 
 ### Product Search
-#### Search for a device by specifying it's model name, version number or features 
 
 ```python
 # Search for a product by name, version or features
@@ -195,7 +195,6 @@ except Exception as e:
 
 
 ### Advanced Search
-#### List all products by brand, category and release date
 ```python
 # List all products by brand, category and release date
 import techspecs
