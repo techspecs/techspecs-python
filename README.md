@@ -2,7 +2,9 @@
   <img src="https://techspecs.io/big-logo-light.svg" alt="TechSpecs Logo" width="200" height="200">
 </p>
 
-TechSpecs Python provides automatic access to the standardized technical specifications of the world's consumer electronics, including the latest smartphones, tablets, smartwatches, laptops, and more. 
+# introduction
+
+TechSpecs Python provides easy access to the standardized technical specifications of the world's consumer electronics, including the latest smartphones, tablets, smartwatches, laptops, monitors, TVs and more. 
 
 # Database Stats
 
