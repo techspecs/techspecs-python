@@ -1,4 +1,7 @@
-![TechSpecs Logo](https://techspecs.io/big-logo-light.svg)
+<p align="center">
+  <img src="https://techspecs.io/big-logo-light.svg" alt="TechSpecs Logo" width="200" height="200">
+</p>
+
 
 
 # Introducing TechSpecs Python
@@ -28,7 +31,6 @@ We take pride in providing a database that is comprehensive and reliable, and we
 
 
 ## Installation
-![How to install TechSpecs](https://i.imgur.com/m9yxeWW.png)
 
 ```sh
 pip install techspecs
