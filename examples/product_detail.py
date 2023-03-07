@@ -1,17 +1,35 @@
-# Get the standardized specifications of a specified product
 import techspecs
 
-# TechSpecs API Key
-techspecs_key = "techspecs_api_key"
+# TechSpecs API base URL
+techspecs_base_url = "https://api.techspecs.io"
 
-# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
-techspecs_base = "a8TD3mkN49fhg2y"
+# TechSpecs API bearer token
+techspecs_api_key = "your_techspecs_api_key"
 
-# TechSpecs product id 
-techspecs_id = "6186b047987cda5f88311983"           
+# TechSpecs product ID
+techspecs_product_id = "63e96260ff7af4b68a304e40"
 
-# choose between "pretty" or "raw" mode for viewing response
-response = techspecs.detail(techspecs_base, techspecs_id, techspecs_key, mode='pretty') 
+# Query dictionary
+query = {
+    "productId": techspecs_product_id
+}
 
-# print the specifications of the product
-print(response)
+# Output mode ('raw' or 'pretty')
+mode = 'pretty'
+
+try:
+    # Validate techspecs_product_id
+    if not isinstance(techspecs_product_id, str):
+        raise ValueError('TechSpecs Product ID should be a string.')
+
+    # Validate mode
+    if mode not in ['raw', 'pretty']:
+        raise ValueError('Invalid mode. Mode should be "raw" or "pretty".')
+
+    # Call TechSpecs API to get product details
+    response = techspecs.product_detail(techspecs_base_url, techspecs_product_id, techspecs_api_key, mode=mode)
+
+    # Print the product details
+    print(response)
+except Exception as e:
+    print(f"An error occurred: {e}")
