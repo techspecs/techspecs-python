@@ -2,11 +2,7 @@
   <img src="https://techspecs.io/big-logo-light.svg" alt="TechSpecs Logo" width="200" height="200">
 </p>
 
-
-
-# Introducing TechSpecs Python
-
-This python library provides automatic access to the standardized technical specifications of the world's consumer electronics, including the latest smartphones, tablets, smartwatches, laptops, and more. 
+TechSpecs Python provides automatic access to the standardized technical specifications of the world's consumer electronics, including the latest smartphones, tablets, smartwatches, laptops, and more. 
 
 # Database Stats
 
@@ -22,8 +18,7 @@ We take pride in providing a database that is comprehensive and reliable, and we
 
 ## API Key
 
--   Get an API key [here](https://developer.dashboard.techspecs.io/)
-
+-   [Signup](https://techspecs.io/) to get your TechSpecs API Key
 
 ## Requirements
 
