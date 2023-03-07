@@ -1,29 +1,70 @@
-# List all products by brand, category and release date
 import techspecs
+import datetime
 
-# TechSpecs API Key
-techspecs_key = "techspecs_api_key"     
+# TechSpecs API base URL
+techspecs_base_url = "https://api.techspecs.io"
 
-# TechSpecs base https://apis.dashboard.techspecs.io/{techspecs_base}
-techspecs_base = "a8TD3mkN49fhg2y"     
+# TechSpecs API bearer token
+techspecs_api_key = "your_techspecs_api_key"
 
-# enter the page number to fetch results from
-page = 1    
+# Output mode ('raw' or 'pretty')
+mode = 'pretty'
 
-# type in the name of the brand you're looking for or leave this field empty to see results from all brands
-brand = ["Apple"]            
+# Set constants
+DEFAULT_PAGE = 0
+DEFAULT_MODE = 'pretty'
+VALID_MODES = ['pretty', 'raw']
 
-# type in the name of the category you're looking for or leave this field empty to see results from all categories
-category = ["smartphone"] 
+# Define function to validate date format
+def is_valid_date(date_str):
+    try:
+        datetime.datetime.strptime(date_str, '%Y-%m-%d')
+        return True
+    except ValueError:
+        return False
 
-# please provide a date range to narrow your search. Leave this field empty to fetch all results from all dates
-date = {                
-    "from": "2010-01-01",   # YYYY-MM-DD
-    "to": "2022-03-15"      # YYYY-MM-DD
+# Define function to validate parameters
+def validate_parameters(brand, category, date=None, page=DEFAULT_PAGE, mode=DEFAULT_MODE):
+    if not isinstance(brand, list):
+        raise ValueError('Brand should be a list.')
+    
+    if not isinstance(category, list):
+        raise ValueError('Category should be a list.')
+    
+    if date is not None:
+        if not isinstance(date, dict):
+            raise ValueError('Invalid date format. Date should be a dictionary with keys "from" and "to".')
+        elif 'from' not in date or 'to' not in date:
+            raise ValueError('Invalid date format. Date dictionary should have keys "from" and "to".')
+        elif not is_valid_date(date['from']) or not is_valid_date(date['to']):
+            raise ValueError('Invalid date format. Date should be in the format YYYY-MM-DD.')
+    
+    if not isinstance(page, int) or page < 0:
+        raise ValueError('Page should be a non-negative integer.')
+    
+    if mode not in VALID_MODES:
+        raise ValueError(f'Invalid mode: {mode}. Mode should be one of {VALID_MODES}.')
+
+# Define search parameters
+brand = ["Apple"]
+category = ["Smartphones"]
+date = {
+    "from": "2010-01-01",
+    "to": "2022-03-15"
 }
+page = 0
 
-# choose between "pretty" or "raw" mode for viewing response
-response = techspecs.products(techspecs_base, brand, category, date, page, techspecs_key, mode='pretty') 
+# Validate search parameters
+try:
+    validate_parameters(brand, category, date=date, page=page, mode=mode)
+except ValueError as e:
+    print(f"Invalid search parameters: {e}")
+    exit()
 
-# print the search results
-print(response)
+
+# Call TechSpecs API to get all products
+try:
+    response = techspecs.get_all_products(techspecs_base_url, techspecs_api_key, brand, category, date, page, mode=mode)
+    print(response)
+except Exception as e:
+    print(f"An error occurred: {e}")
