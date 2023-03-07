@@ -2,6 +2,10 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
+src/TechSpecs.egg-info/PKG-INFO
+src/TechSpecs.egg-info/SOURCES.txt
+src/TechSpecs.egg-info/dependency_links.txt
+src/TechSpecs.egg-info/top_level.txt
 src/Techspecs.egg-info/PKG-INFO
 src/Techspecs.egg-info/SOURCES.txt
 src/Techspecs.egg-info/dependency_links.txt
@@ -12,3 +16,10 @@ src/techspecs.egg-info/PKG-INFO
 src/techspecs.egg-info/SOURCES.txt
 src/techspecs.egg-info/dependency_links.txt
 src/techspecs.egg-info/top_level.txt
+tests/test_get_all_brandlogos.py
+tests/test_get_all_brands.py
+tests/test_get_all_categories.py
+tests/test_machine_id_search.py
+tests/test_product_detail.py
+tests/test_product_search.py
+tests/test_techspecs_advanced_search.py
